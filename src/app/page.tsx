@@ -52,6 +52,11 @@ export default async function Home() {
         </div>
       </div>
 
+      <div className="hover:cursor-auto absolute transition-all hover:bg-black left-8 bottom-8 backdrop-blur-sm bg-black/50 text-dark shadow rounded p-2">
+        <Link href="https://github.com/sanket95droid/InsightPDF.git" target='_blank'>
+        <p className="font-semibold text-sm text-white">Made by sanket95droid</p>
+        </Link>
+      </div>
     </div>
   )
 }
