@@ -16,31 +16,28 @@ export default async function Home() {
               <UserButton afterSignOutUrl='/'></UserButton>
             </div>
 
-            <div className="flex mt-2">
-              {isAuth && (<Button>Go to Chats</Button>)}
+          <div className="flex flex-row">
+            <div className="flex mt-4">
+              {isAuth && (<Button className="bg-[#0B0D09] shadow-lg">Go to Chats</Button>)}
             </div>
 
-            {/* <p className='mt-3'>
-              Unleash the power of interactive PDFs with our innovative application. Engage, discuss, and understand your documents like never before.
-              Its not just reading, its a dynamic conversation with your content.
-            </p> */}
-
-            <div className="w-full mt-4 flex-row">
+            <div className="w-full mt-4 flex flex-row">
               {isAuth ? (<h1></h1>):(
-                <Link href="/sign-in">
-                  <Button className="bg-[#0B0D09] shadow-lg">Get Started
+                <Link href="/sign-up">
+                  <Button className="bg-[#0B0D09] shadow-lg transition ease-out">Get Started
                     <LogIn className='ml-2 h-4 w-4 animate-bounce'/>
                   </Button>
                 </Link>
               )}
-              {isAuth ? (<h1></h1>):(
+              {
                 <Link href="/pricing" className="ml-3">
-                  <Button className="bg-[#0B0D09] shadow-lg">Pricing
-                    <Gem className='ml-2 h-4 w-4'/>
+                  <Button className="bg-[#0B0D09] shadow-lg transition ease-out">Pricing
+                    <Gem className='ml-2 h-4 w-4 animate-bounce'/>
                   </Button>
                 </Link> 
-              )}
+              }
             </div>
+          </div>
 
         </div>
       </div>
@@ -52,11 +49,12 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="hover:cursor-auto absolute transition-all hover:bg-black left-8 bottom-8 backdrop-blur-sm bg-black/50 text-dark shadow rounded p-2">
+      <div className="z-1 hover:cursor-auto absolute transition ease-out duration-300 hover:bg-black left-8 bottom-8 backdrop-blur-sm bg-black/50 text-dark shadow rounded p-2">
         <Link href="https://github.com/sanket95droid/InsightPDF.git" target='_blank'>
         <p className="font-semibold text-sm text-white">Made by sanket95droid</p>
         </Link>
       </div>
+
     </div>
   )
 }
