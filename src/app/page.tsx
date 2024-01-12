@@ -45,7 +45,6 @@ export default async function Home() {
       <div className="absolute top-[40%] inset-y-0 right-[5%] w-1/2">
         <div className="flex flex-col">
           <Image src = "" className = "w-1/2 h-3/4" alt = "Application Image"/>
-
         </div>
       </div>
 
