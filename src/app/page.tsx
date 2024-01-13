@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import {UserButton, auth} from '@clerk/nextjs'
 import {LogIn, Gem} from 'lucide-react'
+import FileUpload from '../components/FileUpload'
 import Link from 'next/link'
 
 export default async function Home() {
@@ -22,7 +23,7 @@ export default async function Home() {
             </div>
 
             <div className="w-full mt-4 flex flex-row">
-              {isAuth ? (<h1></h1>):(
+              {isAuth ? (<FileUpload />):(
                 <Link href="/sign-up">
                   <Button className="bg-[#0B0D09] shadow-lg transition ease-out">Get Started
                     <LogIn className='ml-2 h-4 w-4 animate-bounce'/>
