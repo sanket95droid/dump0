@@ -10,12 +10,13 @@ export default async function Home() {
   const isAuth = !!userId
   return (
     <div className="w-screen min-h-screen bg-[#505946]">
-      <div className="absolute top-[40%] inset-y-0 left-[5%] w-1/3">
+      <div className="absolute top-[35%] inset-y-0 left-[5%] w-1/3">
         <div className="flex flex-col">
             <div className="flex">
               <h1 className="mr-3 font-semibold text-5xl text-[#E9E9E9]">Elevate Your Document Experience with PDFInsight</h1>
               <UserButton afterSignOutUrl='/'></UserButton>
             </div>
+
 
           <div className="flex flex-row">
             <div className="flex mt-4">
